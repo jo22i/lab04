@@ -16,35 +16,35 @@ jobs:
     steps:
     - name: Build a *formatter* library
       run: |
-        cd formatter_lib
-        cmake -H. -B_build && cmake --build _build
-        cd ..
+        cmake -H. -B_build
+        cmake --build _build
       shell: bash
+      working-directory: formatter_lib
       
     - name: Build a *formatter_ex* library
       run: |
-        cd formatter_ex_lib
-        cmake -H. -B_build && cmake --build _build
-        cd ..
+        cmake -H. -B_build
+        cmake --build _build
       shell: bash
+      working-directory: formatter_ex_lib
       
     - name: Build a *hello_world* application
       run: |
-        cd hello_world_application
-        cmake -H. -B_build && cmake --build _build
-        cd ..
+        cmake -H. -B_build
+        cmake --build _build
       shell: bash
+      working-directory: hello_world_application
       
     - name: Build a *solver* library
       run: |
-        cd solver_lib
-        cmake -H. -B_build && cmake --build _build
-        cd ..
+        cmake -H. -B_build
+        cmake --build _build
       shell: bash
+      working-directory: solver_lib
       
     - name: Build a *solver* application
       run: |
-        cd solver_application
-        cmake -H. -B_build && cmake --build _build
-        cd ..
+        cmake -H. -B_build
+        cmake --build _build
       shell: bash
+      working-directory: solver_application
