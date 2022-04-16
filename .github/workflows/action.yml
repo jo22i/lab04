@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: checkout
+      uses: checkout@v3
+    
     - name: Build a *formatter* library
       run: |
         cmake -H. -B_build
