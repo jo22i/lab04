@@ -75,3 +75,4 @@ jobs:
 
 4. Смотрим на результаты работы `GitHub Actions` во вкладке `Actions`.
 
+![Screenshot](./a.png)
