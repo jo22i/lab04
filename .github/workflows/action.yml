@@ -69,4 +69,4 @@ jobs:
     - name: Push artifacts into repo
       uses: actions/upload-artifact@v3
       with:
-      	path: artifacts
+        path: artifacts
